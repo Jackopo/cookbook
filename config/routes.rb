@@ -1,4 +1,6 @@
 Cookbook::Application.routes.draw do
+  root "pages#home"
+
   resources :recipes
 
   resources :ingredients

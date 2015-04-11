@@ -46,7 +46,7 @@ gem "haml-rails", "~> 0.9"
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 group :development, :test do
-  gem 'better-errors'
+  gem 'better_errors'
   gem 'pry-rails'
-  gem 'rspec'
+  gem 'rspec-rails'
 end

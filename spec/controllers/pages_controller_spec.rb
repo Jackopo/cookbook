@@ -1,13 +1,19 @@
 require 'spec_helper'
 
-describe PagesController do
-
+describe PagesController, type: :controller do
+  render_views
   describe "GET 'home'" do
 
     it "should be successful" do
-      get 'home'
+      get :home
 
-      response.should be_success
+      expect(response).to be_success
+    end
+
+    it "should have right title" do
+      get :home
+
+      expect(response.body).to match("Cookbook | Home")
     end
   end
 end

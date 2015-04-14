@@ -1,0 +1,22 @@
+%header.navbar.navbar-inverse.navbar-static-top
+  %div.container-fluid
+    %div.navbar-header
+      %button.navbar-toggle.collapsed{data: {toggle: "collapse", target: "#navbar-collapse-1"}}
+        %span.sr-only Toggle Navigation
+        %span.icon-bar
+        %span.icon-bar
+        %span.icon-bar
+      %a.navbar-brand{:href => root_path}
+        CookBook
+    %div#navbar-collapse-1.collapse.navbar-collapse
+      %ul.nav.navbar-nav
+        %li.active
+          %a
+            Home
+        %li
+          %a
+            Recipes
+        %li
+          %a
+            Users
+

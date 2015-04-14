@@ -48,5 +48,5 @@ gem "haml-rails", "~> 0.9"
 group :development, :test do
   gem 'better_errors'
   gem 'pry-rails'
-  gem 'rspec-rails'
+  gem 'rspec-rails', '~> 3.0'
 end
